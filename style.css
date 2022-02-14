@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* this allows it to be scrollable */
+body{
+  background-image: url(https://wallpapercave.com/wp/wp9767078.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#outputBox{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5em;
+    border-radius: 0.5em;
+}
+
+div.scroll{
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 80vh;
+    width: 50vw;
+    background-color: white;
+    justify-content: center;
+    padding: 1em;
+}
+
+.body{
+    background-color: rgb(140, 27, 27);
+}
+
+#main{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    padding: 1em;
+}
+
+#hintbox{
+    width: 30em;
+    height: 30em;
+}
+
+.card{
+    display: none;
+    background-color: white;
+    width: 20vw;
+    margin: 1em;
+    padding: 1em;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5em;
+    border-radius: 0.5em;
+}
+
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+#jsonInputForm{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+#jsonInput{
+    width: 100%;
+    margin-bottom: 00.5em;
+}
+
+#subMain{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#userInput{
+    width:100%
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=commands.css>
+    <title>Command List</title>
+</head>
+<body>
+    <article>
+        <h1 class=heading> Commands List</h1>
+        <section>
+            <p>
+                <h4>North, East, South, West, Up and Down:</h4>
+                'North/East/South/West/Up/Down'
+                <ul>
+                    <li>These commands move the player to the location in the direction specified.</li>
+                    <li>Available directions are listed in each location as places you can go.</li>
+                </ul>
+            </p>
+            <p>
+                <h4>Hint:</h4> 
+                'Hint'
+                <ul> 
+                    <li>This command gives you a hint for when you are stuck.</li>
+                </ul>
+            </p> 
+            <p>   
+                <h4>Break:</h4>
+                'Break + <span class="conditionText">item</span> '
+                <ul>
+                    <li>This command allows you to break items.</li>
+                    <li>The item must either be in your inventory or current place</li>
+                    <li>E.g Break chair</li>
+                </ul>
+            </p>
+            <p>
+                <h4>Jump:</h4>
+                'Jump + <span class="conditionText">direction</span>'
+                <ul>
+                    <li>This command allows you to jump around the map in any direction.</li>
+                    <li>Use this to move between places when a jump is required</li>
+                    <li>E.g Jump West</li>
+                </ul>
+            </p>
+            <p>
+                <h4>Attack:</h4>
+                'Attack + <span class="conditionText">item</span> + <span class="conditionText">item(weapon)</span>'<br>
+                'Attack + <span class="conditionText">door/exit</span> + <span class="conditionText">direction</span> + <span class="conditionText">item(weapon)</span>'
+                <ul>
+                    <li>This command allows you to attack items with items in your inventory.</li>
+                    <li>E.g Attack bookshelf axe</li>
+                </ul>
+            </p> 
+            <p>
+                <h4>Drink:</h4>
+                'Drink + <span class="conditionText">item(drinkable)</span>' 
+                <ul>
+                    <li>The item must have the drinkable property</li>
+                    <li>The item must be in your inventory or in the current place</li>
+                    <li>Drinking something increases or decreases your stamina by 5 depending on if it's poisonous or not.</li>
+                </ul>
+            </p>
+            <p>
+                <h4>Eat:</h4>
+                'Eat + <span class="conditionText">item(edible)</span>'
+                <ul>
+                    <li>The item must have the edible property</li>
+                    <li>The item must be in your inventory or in the current place</li>
+                    <li>This command increases or decreases your health by 5 depending on if it's poisonous or not.</li>
+                </ul>
+            </p>
+            <p>
+                <h4>Examine:</h4>
+                'Examine + <span class="conditionText">item</span>'
+                <ul>
+                    <li>This command will provide you with a description of an item</li>
+                    <li>It will also give you an idea towards it's properties</li>
+                </ul>
+            </p>
+            <p>
+                <h4> Open:</h4>
+                'Open + <span class="conditionText">item(container)</span>'
+                <ul>
+                    <li>This command will open an item with the container property and reveal any items inside.</li>
+                    <li>The container must be unlocked</li>
+                    <li>E.g Open wardrobe</li>
+                </ul>
+            </p>
+            <p>
+                <h4> Take and Drop:</h4>  
+                'Take + <span class="conditionText">item</span>'<br>
+                'Drop + <span class="conditionText">item</span>'
+                <ul>
+                    <li>This command allows you to add or remove items from your inventory.</li>
+                    <li>You can't pick up items if you are carrying too much or if they are too heavy.</li>
+                </ul>
+            </p> 
+            <p>
+                <h4>Unlock:</h4> 
+                'Unlock + <span class="conditionText">item</span>' <br>
+                'Unlock + <span class="conditionText">door/exit</span> + <span class="conditionText">direction</span>'
+                <ul>
+                    <li>Unlocks an item or exit.</li>
+                    <li>Unlocking an item allows it to be opened to view items inside</li>
+                    <li>Unlocking an exit allows you to pass through it in that direction</li>
+                </ul>
+            </p> 
+            <p>
+                <h4>Climb:</h4>
+                'Climb + <span class="conditionText">direction</span>'
+                <ul>
+                    <li>This command allows you to climb in different directions.</li>
+                </ul>
+            </p> 
+            <p>
+                <h4>Dig:</h4>
+                'Dig'
+                <ul>
+                    <li>This command allows you to dig into the ground to reveal hidden items.</li>
+                    <li>Requires a shovel in the inventory</li>
+                </ul>
+            </p>
+            <p>
+                <h4>Push:</h4>
+                'Push + <span class="conditionText">item</span>'
+                <ul>
+                    <li>This command will allow you to push an item to reveal items that are hidden.</li>
+                </ul>
+            </p>
+            <p>
+                <h4>Fix:</h4>
+                'Fix + <span class="conditionText">item</span>'
+                <ul>
+                    <li>This command allows you to fix a broken item.</li>
+                </ul>
+            </p>
+            <p>
+                <h4>Burn:</h4>
+                'Burn + <span class="conditionText">item</span>'
+                <ul>
+                    <li>This command allows you to set an item on fire.</li>
+                    <li>It will lose durability over time until it breaks.</li>
+                </ul>
+            </p>
+        </section>
+    </article>
+</body>
+</html>
+

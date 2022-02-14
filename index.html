@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RPG Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="cycle.js" defer></script>
+        <script src="classes.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="outputBox">
+                <div class="scroll" id="scroll"> 
+                    <h1>Welcome to the Text-Based Adventure Creator</h1>
+                    <br>
+                    <p>You can play the default text based adventure, play a custom game or you can create your own to share with others.</p>
+                    <p>Playing the default game would take you on an adventure with all sort of twists and turn as you explore the wilderness.</p>
+                    <p>If you click "Custom Game" an input box for your custom game's JSON data, click start custom when you have pasted it.</p>
+                    <p>If you choose to create your own game, you are able to share this with anyone who would like to checkout your game.</p>
+                    <br>
+                    <div id="buttons">
+                        <button id="startDefault">Default Game</button> 
+                        <button id="inputCustomGameButton">Custom Game</button> 
+                        <a href="adventureCreator.html">
+                            <button id="create">Create Game</button>
+                        </a>
+                    </div>
+                    
+                    <div id="jsonInputForm">
+                        <textarea name="jsonInput" id="jsonInput" rows="10"></textarea>
+                        <button id="startCustomGame">Start Custom</button>
+                    </div>
+                    <p>The full commands list is <a href="commands.html" target="_blank">here</a></p>
+                    <p>For extra help type 'HINT'</p>
+                    <div id="gameOutput">
+
+                    </div>
+                </div>
+
+                <div id="subMain">
+                    <input id="userInput" type="text" placeholder="Enter a command"> 
+                    <button id="save">Save Game</button>
+                    <button id="restartButton">Restart</button>
+                </div>
+            </div>
+    
+            <div id="hintbox">
+                <div class="card" id="card">
+                    <p class="para" id="para"></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+/* *, *::before, *::after {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#createdAdventure{
+    display: none;
+} */
+
+
+
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image:linear-gradient(to bottom right, dodgerblue, blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#whole-thing{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10%;
+    padding:2em;
+}
+#editor{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+#newButtons{
+    display: none;
+}
+#getPlaceIDForm{
+    display: none;
+}
+#getItemIDForm{
+    display: none;
+}
+#newPlace{
+    display: none;
+}
+#newItem{
+    display: none;
+}
+
+#submitPlace{
+    display: none;
+}
+
+#savePlaceEdits{
+    display: none;
+}
+
+#submitItem{
+    display: none;
+}
+
+#saveItemEdits{
+    display: none;
+}
+
+.fo{
+    display: table;
+}
+.para{
+    display: table-row;
+}
+.la{
+    display: table-cell;
+}
+/* #nameList{
+    /* position: absolute; */
+    /* margin-left: 60em; */
+/* } */
+#generateJSON{
+    margin-top: 6em;
+    bottom: 0;
+}
+
+#loadButtons{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+#jsonInputDiv{
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+
+}
+
+#jsonInput{
+    height: 7em;
+    width: 36em;
+    resize: none;
+}
