@@ -3,11 +3,6 @@
 }
 
 /* this allows it to be scrollable */
-body{
-  background-image: url(https://wallpapercave.com/wp/wp9767078.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 #main{
     display: flex;
